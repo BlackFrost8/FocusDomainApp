@@ -2,19 +2,20 @@
   "name": "Focus Domain",
   "short_name": "Focus",
   "description": "A focused productivity suite with timer, todo, and image viewer",
-  "start_url": "/",
+  "start_url": "/FocusDomainApp/",
+  "scope": "/FocusDomainApp/",
   "display": "standalone",
   "theme_color": "#00ffff",
   "background_color": "#000000",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/FocusDomainApp/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/FocusDomainApp/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
