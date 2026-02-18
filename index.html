@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus Domain</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00ffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    
     <style>
         :root {
             --main-color: #00ffff;
@@ -3755,6 +3761,19 @@
                 instructions.textContent = "Tap bottom of screen to show navigation arrows";
             }
         })();
+    </script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').then(reg => {
+                    console.log('✅ Focus Domain PWA ready');
+                }).catch(err => {
+                    console.log('❌ Service Worker error:', err);
+                });
+            });
+        }
     </script>
 </body>
 </html>
