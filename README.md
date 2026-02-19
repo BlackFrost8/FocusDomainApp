@@ -1,0 +1,1 @@
+This is a PWA that I am using to convert to an APK and an AAB so I can potentially upload this to the Google Play Store in the future. Currently right now though I am working on converting this PWA into an APK
